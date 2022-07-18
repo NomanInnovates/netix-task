@@ -1,0 +1,23 @@
+.inputForm{
+  display: flex;
+  justify-content: center;
+}
+
+.inputForm input{
+  border: none;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: aqua;
+}
+.inputForm button{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.TodoDiv{
+  display: flex;
+  justify-content: space-around;
+}
