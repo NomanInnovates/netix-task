@@ -37,21 +37,17 @@ function App() {
         />
         <button>Add Todo</button>
       </form>
+      
       <div className="TodoDiv">
-        <div>
-          <List status="Backlog" data={data} onArrowClick={onArrowClick} right={"Todo"} left={"Backlog"} leftDisabled />
-        </div>
-        <div>
 
-          <List status="Todo" data={data} onArrowClick={onArrowClick} right={"Ongoing"} left={"Backlog"} />
-        </div>
-        <div>
-          <List status="Ongoing" data={data} onArrowClick={onArrowClick} right={"Done"} left={"Todo"} />
+        <List status="Backlog" data={data} onArrowClick={onArrowClick} right={"Todo"} left={"Backlog"} leftDisabled />
 
-        </div>
-        <div>
-          <List status="Done" data={data} onArrowClick={onArrowClick} right={"Done"} left={"Ongoing"} rightDisabled />
-        </div>
+        <List status="Todo" data={data} onArrowClick={onArrowClick} right={"Ongoing"} left={"Backlog"} />
+
+        <List status="Ongoing" data={data} onArrowClick={onArrowClick} right={"Done"} left={"Todo"} />
+
+        <List status="Done" data={data} onArrowClick={onArrowClick} right={"Done"} left={"Ongoing"} rightDisabled />
+
       </div>
     </div>
   );

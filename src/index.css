@@ -1,23 +1,68 @@
-.inputForm{
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #787878;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li button {
+  font-size: 20px;
+  padding: 0 10px 3px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 0 3px;
+}
+
+.inputForm {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-.inputForm input{
+.inputForm input {
   border: none;
   height: 20px;
+  outline: none;
   width: 200px;
-  border-radius: 10px;
   padding: 10px;
-  background-color: aqua;
-}
-.inputForm button{
   border-radius: 10px;
-  background-color: black;
-  color: white;
+  background-color: #c1c1c1;
 }
 
-.TodoDiv{
+.inputForm button {
+  border: none;
+  color: white;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.TodoDiv {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
   justify-content: space-around;
+}
+
+.TodoDiv>div {
+  color: #dddddd;
+  padding: 20px;
+  margin-top:10px;
+  max-width: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 5px;
+  background-color: rgb(26, 26, 26);
 }
